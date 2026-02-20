@@ -2,13 +2,6 @@
 
 A simple and efficient Vision-Language-Action (VLA) model for robot manipulation tasks.
 
-## Features
-
-- **Efficient Backbone**: Uses SmolVLM-500M-Instruct as the vision-language backbone
-- **Flow Matching**: Flow matching for action prediction
-- **Multi-view Support**: Handles multiple camera views (agentview + wrist camera)
-- **LIBERO Benchmark**: Trained and evaluated on LIBERO manipulation tasks
-
 ## Installation
 
 ```bash
@@ -21,7 +14,7 @@ pip install flash-attn==2.5.6 --no-build-isolation
 pip install tensorflow tensorflow-datasets
 ```
 
-## Training
+## Training (LIBERO Dataset)
 
 ### 1. Prepare LIBERO Dataset
 
