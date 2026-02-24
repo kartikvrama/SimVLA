@@ -19,6 +19,16 @@ pip install -e .
 ```bash
 conda activate simvla
 CUDA_VISIBLE_DEVICES=1 python serve_smolvlm_libero.py \
+    --checkpoint YuankaiLuo/SimVLA-LIBERO \
+    --norm_stats ./norm_stats/libero_norm.json \
+    --port 8102
+```
+
+or 
+
+```
+conda activate simvla
+CUDA_VISIBLE_DEVICES=1 python serve_smolvlm_libero.py \
     --checkpoint ../../runs/simvla_libero_large/ckpt-150000 \
     --norm_stats ../../norm_stats/libero_norm.json \
     --port 8102
